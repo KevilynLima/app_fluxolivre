@@ -1,6 +1,6 @@
 {
-    "name": "app_fluxolivre",
-    "short_name": "app_fluxolivre",
+    "name": "app_fluxolivrep",
+    "short_name": "app_fluxolivrep",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
             Text(
               isFull ? 'Acesso Bloqueado' : 'Acesso Liberado',
               style: TextStyle(
-                color: Color(0xffffffff),
+                color: isFull ? Color(0xFFFF0000) : Color(0xFFFFFFFF),
                 fontSize: 40,
                 fontWeight: FontWeight.w500,
               ),
@@ -50,8 +50,8 @@ class _HomePageState extends State<HomePage> {
             Text(
               count.toString(),
               style: TextStyle(
-                color: Color(0xffffffff),
-                fontSize: 40,
+                color: Color(0xFFFFFFFF),
+                fontSize: 60,
                 fontWeight: FontWeight.w500,
               ),
             ),
@@ -60,7 +60,8 @@ class _HomePageState extends State<HomePage> {
               children: [
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: isEmpty ? const Color(0xaaafae24) : const Color(0xffafae24),
+                    backgroundColor:
+                        isEmpty ? Color(0xAAAFAE24) : Color(0xFFAFAE24),
                     fixedSize: const Size(110, 75),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(24),
@@ -71,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                     'Sair',
                     style: TextStyle(
                       fontSize: 20,
-                      color: Color(0xff031c5f),
+                      color: Color(0xFF031CF5),
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -79,7 +80,8 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(width: 40),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: isFull ? const Color(0xaaafae24) : const Color(0xffafae24),
+                    backgroundColor:
+                        isFull ? Color(0xAAAFAE24) : Color(0xFFAFAE24),
                     fixedSize: const Size(110, 75),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(24),
@@ -90,7 +92,7 @@ class _HomePageState extends State<HomePage> {
                     'Entrar',
                     style: TextStyle(
                       fontSize: 20,
-                      color: Color(0xff031c5f),
+                      color: Color(0xFF031CF5),
                       fontWeight: FontWeight.w500,
                     ),
                   ),
