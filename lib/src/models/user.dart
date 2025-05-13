@@ -21,10 +21,19 @@ class User {
 
   Map<String, dynamic> toJson(){
     return{
-      "id":_id,
+      "id": _id,
       "name": _name,
-      "email":_email,
-      "passoword":_password
+      "email": _email,
+      "password": _password
     };
+  }
+  
+  factory User.fromJson(Map<String, dynamic> json) {
+    return User(
+      id: json['id'],
+      name: json['name'] ?? '',
+      email: json['email'] ?? '',
+      password: json['password'] ?? '',
+    );
   }
 }

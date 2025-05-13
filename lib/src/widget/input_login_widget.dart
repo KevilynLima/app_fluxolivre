@@ -5,13 +5,13 @@ class InputLoginWidget extends StatelessWidget {
   final String hint;
   final bool obscure;
   final TextInputType type;
-  final TextEditingController controller;
+  final TextEditingController? controller;
   final String? Function(String?)? validator;
   
   const InputLoginWidget({
     required this.icon,
     required this.hint,
-    required this.controller,
+    this.controller,
     this.obscure = false,
     this.type = TextInputType.text,
     this.validator,

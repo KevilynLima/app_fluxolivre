@@ -28,6 +28,19 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.admin_panel_settings, color: Colors.white),
+            onPressed: () {
+              Navigator.of(context).pushNamed('/admin');
+            },
+            tooltip: 'Área Administrativa',
+          ),
+        ],
+      ),
       body: Container(
         alignment: Alignment.center,
         decoration: BoxDecoration(

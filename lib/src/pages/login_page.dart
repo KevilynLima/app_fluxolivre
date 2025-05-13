@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
 
       if(mounted){
         if(erroMessage== null){
-          Navigator.of(context).pushNamed('/hone');
+          Navigator.of(context).pushNamed('/home');
         }else{
           showErroSnackBar(context, erroMessage);
         }

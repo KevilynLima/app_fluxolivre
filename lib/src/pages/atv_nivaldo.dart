@@ -1,8 +1,8 @@
-import 'package:app_fluxolivre/src/widget/input_login_widget.dart';
+import 'package:app_fluxolivrep/src/widget/input_login_widget.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget{
-  const LoginPage({super.key});
+class AtvNivaldo extends StatelessWidget {
+  const AtvNivaldo({super.key});
 
 
  @override
@@ -30,11 +30,13 @@ class LoginPage extends StatelessWidget{
           InputLoginWidget(
             icon: Icons.person_outline, 
             hint: 'Usuário', 
-            obscure: false),
+            obscure: false,
+            controller: TextEditingController()),
           InputLoginWidget(
             icon: Icons.lock_outlined, 
             hint: 'Senha', 
-            obscure: true
+            obscure: true,
+            controller: TextEditingController()
           ),
           const SizedBox(height: 30,),
           ElevatedButton(

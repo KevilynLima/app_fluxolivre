@@ -1,6 +1,9 @@
 import 'package:app_fluxolivrep/src/pages/cad_usuario_page.dart';
+import 'package:app_fluxolivrep/src/pages/edit_user_page.dart';
 import 'package:app_fluxolivrep/src/pages/home_page.dart';
 import 'package:app_fluxolivrep/src/pages/login_page.dart';
+import 'package:app_fluxolivrep/src/pages/tela_admin.dart';
+import 'package:app_fluxolivrep/src/pages/users_page.dart';
 import 'package:app_fluxolivrep/src/providers/auth_provider.dart';
 import 'package:app_fluxolivrep/src/providers/user_register_provider.dart';
 import 'package:flutter/material.dart';
@@ -23,6 +26,9 @@ class AppFluxolivre extends StatelessWidget {
           '/':(_)=> LoginPage(),
           '/home':(_)=> HomePage(),
           '/novousuario': (_) => CadUsuarioPage(),
+          '/admin': (_) => TelaAdmin(),
+          '/users': (_) => UsersPage(),
+          '/edit-user': (_) => EditUserPage(),
         },
       ),
     );

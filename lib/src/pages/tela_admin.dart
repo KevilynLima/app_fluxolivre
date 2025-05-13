@@ -35,8 +35,7 @@ class TelaAdmin extends StatelessWidget {
               Icons.people, 
               Colors.blueGrey.shade200,
               () {
-                // Navegação para tela de Usuários (implementação futura)
-                debugPrint('Navegando para Usuários');
+                Navigator.of(context).pushNamed('/users');
               },
             ),
             
