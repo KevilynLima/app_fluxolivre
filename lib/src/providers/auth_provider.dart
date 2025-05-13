@@ -18,15 +18,12 @@ class AuthProvider with ChangeNotifier{
           _perfil = response['perfil'];
           notifyListeners();
           return null;
-          
-        }else{
+        } else {
           return response['message'];
         }
-        
       } catch (error) {
-        return 'Erro ao conectar com o Servidor';
+        return 'Erro inesperado. Por favor, tente novamente.';
       }
-
     }
 
     Future<void> logout() async{
@@ -40,5 +37,4 @@ class AuthProvider with ChangeNotifier{
       _token = await AuthApiService.getToken();
       notifyListeners();
     }
-
 }
